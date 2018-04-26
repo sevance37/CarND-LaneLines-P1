@@ -2,10 +2,7 @@
 # **Finding Lane Lines on the Road** 
 
 **The goal of this project is to find the lanes on the road and highlight them in red. **
-
-<img src="pipeline_steps/lanes.jpg" alt="solid yellow left" style="width: 500px;" align="left"/>
-
-
+<img src="pipeline_steps/lanes.jpg" alt="lanes" width="500px" align="left"/>
 
 ### 1. The pipeline.
 A pipeline was created to accomplish this task. The pipeline processes one image at a time, and uses several steps described below to draw lanes on an image. The code for accomplishing this task is included in the accompanying jupyter notebook. 
@@ -34,11 +31,11 @@ An example of how the pipeline code would work is giving in the following table.
 
 | Steps | Description | Image
 |-------------|:-------------|:---:|
-|1.|Convert the image from color to gray.<br><br>  To improve the algorithm so that it works for the callenge video, I first apply a mask that hightlights red colors. |<img src="pipeline_steps/gray.jpg" alt="gray image" style="width: 800px;" align="center"/>|
-|2.|Apply the Canny algorithm to detect the edges after applying a Gaussian Noise Kernel to the image.|<img src="pipeline_steps/canny.jpg" alt="gray image" style="width:800px;" align="center"/>|
-|3.|Apply a mask that encompasses the road section and removes the scenery and sky. This is a trapezoid whose base is the bottom of the image and whose top is a little less than half of the image.|<img src="pipeline_steps/reg_of_int.jpg" alt="gray image" style="width:800px;" align="center"/>|
-|4.|Apply the Hough Line algorithm to detect the straight lines in the image.|<img src="pipeline_steps/hough.jpg" alt="gray image" style="width:800px;" align="center"/>| 
-|5.|Apply my function find_lanes().  This function takes the lines found using the Hough Line algorithm and returns the 2 lane lines. |<img src="pipeline_steps/lanes.jpg" alt="gray image" style="width:800px;" align="center"/>|
+|1.|Convert the image from color to gray.<br><br>  To improve the algorithm so that it works for the callenge video, I first apply a mask that hightlights red colors. |<img src="pipeline_steps/gray.jpg" alt="gray image" width="1000px;" align="center"/>|
+|2.|Apply the Canny algorithm to detect the edges after applying a Gaussian Noise Kernel to the image.|<img src="pipeline_steps/canny.jpg" alt="gray image" width="1000px;" align="center"/>|
+|3.|Apply a mask that encompasses the road section and removes the scenery and sky. This is a trapezoid whose base is the bottom of the image and whose top is a little less than half of the image.|<img src="pipeline_steps/reg_of_int.jpg" alt="gray image" width="1000px;" align="center"/>|
+|4.|Apply the Hough Line algorithm to detect the straight lines in the image.|<img src="pipeline_steps/hough.jpg" alt="gray image" width="1000px;" align="center"/>| 
+|5.|Apply my function find_lanes().  This function takes the lines found using the Hough Line algorithm and returns the 2 lane lines. |<img src="pipeline_steps/lanes.jpg" alt="gray image" width="1000px;" align="center"/>|
 
 
 ### 2. Potential issues with this pipeline
