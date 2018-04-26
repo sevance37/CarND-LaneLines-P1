@@ -9,7 +9,7 @@ __The goal of this project is to find the lanes on the road and highlight them i
 ### 1. The pipeline.
 A pipeline was created to accomplish this task. The pipeline processes one image at a time, and uses several steps described below to draw lanes on an image. The code for accomplishing this task is included in the accompanying jupyter notebook. 
 
-The main function for the pipeline is called draw_lines() and was taken largely from example code found in the section on Computer Vision Fundamentals. The function draw_lines() calls my function find_lanes() whose main purpose is find 2 lanes from a number of possible lines obtained from the image.  The code is summarize below.
+The main function for the pipeline is called draw_lines() and was taken largely from example code found in the section on Computer Vision Fundamentals. The function draw_lines() calls my function find_lanes() whose main purpose is find 2 lanes from a number of possible lines obtained from the image.  The code is summarized below.
 
 #### The Code
 The function **draw_lines()** does the following tasks:
