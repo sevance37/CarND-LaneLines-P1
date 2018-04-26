@@ -2,7 +2,8 @@
 # **Finding Lane Lines on the Road** 
 
 **The goal of this project is to find the lanes on the road and highlight them in red. **
-<img src="pipeline_steps/lanes.jpg" alt="lanes" width="500px" align="left"/>
+<img src="pipeline_steps/lanes.jpg" alt="lanes" width="500px" align="center"/>
+
 
 ### 1. The pipeline.
 A pipeline was created to accomplish this task. The pipeline processes one image at a time, and uses several steps described below to draw lanes on an image. The code for accomplishing this task is included in the accompanying jupyter notebook. 
